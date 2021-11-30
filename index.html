@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock Countdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="checkStorage();">
+
+    <div class="grid-container">
+        <div class="item1">
+            Clock Countdown
+        </div>
+        
+
+        <div class="item3">
+            <div id="defaultDate_Section">
+                Please Select a Date<br />
+                <input type="date" id="dateSelected"  min="2021-11-30" /><br />
+                <input type="button" id="btnStart" value="Start Count Down" onclick="setStorage();" />
+            </div>
+
+            <div id="countdown_Section">
+                Remaining Time till selected Date: <span id="selDate">123</span><br />
+                <div id="timer">&nbsp;</div>
+                <br /><br />
+
+                <div><input type="button" id="reset" value="Reset Date" onclick="resetStorage();" /></div>
+            </div>
+        </div>  
+        
+
+        <div class="item5">
+            @&nbsp;2021
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
